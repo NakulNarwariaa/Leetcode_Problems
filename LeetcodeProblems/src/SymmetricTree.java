@@ -1,5 +1,5 @@
 
-
+import java.util.*;
 //Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 public class SymmetricTree {
 
@@ -17,6 +17,9 @@ public class SymmetricTree {
             return false;
         return q.val==w.val && isMirror(q.left,w.right) && isMirror(q.right,w.left);
     }
+    
+
+
 }
 
 class TreeNode {
